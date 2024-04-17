@@ -26,3 +26,33 @@ You can install the required libraries using pip:
 
 ```bash
 pip install tensorflow numpy matplotlib
+```
+
+## Usage
+Download the notebook and run it in a Jupyter environment or directly on Google Colab. Ensure all the dependencies mentioned above are installed.
+
+## Model Overview
+- Two convolutional layers with ReLU activation, followed by max-pooling layers.
+- Two additional convolutional layers followed by max-pooling to deepen the network.
+- A fully connected layer with 512 units and dropout for regularization.
+- A softmax output layer for classifying the images into one of then classes.
+
+The model uses the Adam optimizer and categorical crossentropy as the loss function.
+
+## Training
+The model is trained with early stopping based on the accuracy reaching 90%, using a custom callback to stop training to prevent overfitting.
+
+## Evaluation
+After training, the model's performance is evaluated on a separate test set to ensure its generalization ability.
+
+## Contributing
+Contributions to this project are welcome. You can contribute in several ways:
+
+- Improving the model's architecture or training process.
+- Extending the notebook to include more visualization or analysis.
+- Fixing bugs or issues.
+
+Please create a pull request with your proposed changes.
+
+## License
+Distributed under the MIT License. See LICENSE for more information.
